@@ -1,0 +1,435 @@
+---
+modules:
+  local:
+    sequential: true
+  jmeter:
+    gui: false
+
+execution:
+- concurrency: 500
+  hold-for: 3600s
+  iterations: 10
+  ramp-up: 10s
+  scenario: source-activity-scenario
+
+scenarios:
+  source-activity-scenario:
+    requests:
+    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//brand.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//http://www.skipjaq.com/
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//brand.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//welcome_aws.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//files/skipjaq_whitepaper.pdf
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//about.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//brand.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//files/skipjaq_logo_sq_120.png
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//offices
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs.html
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//team
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//management
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//board
+      method: GET
+      assert:
+        http-code: 200    - url: skipjaq.com//jobs
+      method: GET
+      assert:
+        http-code: 200

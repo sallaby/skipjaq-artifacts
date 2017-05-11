@@ -1,0 +1,77 @@
+---
+modules:
+  local:
+    sequential: true
+  jmeter:
+    gui: false
+
+execution:
+- concurrency: 500
+  hold-for: 3600s
+  iterations: 10
+  ramp-up: 10s
+  scenario: source-activity-scenario
+
+scenarios:
+  source-activity-scenario:
+    requests:
+    - url: http://skipjaq.co/team
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/jobs/pl/staff_engineer
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/jobs.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/offices
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/about.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/management
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/board
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/offices.html
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/jobs
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/jobs/uk/senior_staff_engineer
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/jobs/uk/senior_java_developer
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/http://www.skipjaq.com/
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/files/skipjaq_logo_sq_120.png
+      method: GET
+      assert:
+        http-code: 200
+    - url: http://skipjaq.co/brand.html
+      method: GET
+      assert:
+        http-code: 200

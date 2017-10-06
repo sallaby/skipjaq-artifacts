@@ -1,0 +1,22 @@
+---
+metadata:
+  schema_version: 0.2
+  name: "Shaw3"
+  generated:
+    inputs: [Google-Analytics_110867656]
+    host: https://books.shawacademy.com
+    date: 2017-10-06T13:59:49.013Z
+    generation_time: 1.044s
+
+configuration:
+  model_entry: "scn-110867656"
+  cookie_policy: "forget"
+  follow_redirects: true
+
+requests:
+
+scenarios:
+  scn-110867656:
+    requestgraph:
+      entry: 
+      edges:

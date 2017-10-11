@@ -1,0 +1,22 @@
+---
+metadata:
+  schema_version: 0.2
+  name: "Shaw5"
+  generated:
+    inputs: [Google-Analytics_80374396]
+    host: http://www.shawacademy.com
+    date: 2017-10-11T13:51:47.462Z
+    generation_time: 7.054s
+
+configuration:
+  model_entry: "scn-80374396"
+  cookie_policy: "forget"
+  follow_redirects: true
+
+requests:
+
+scenarios:
+  scn-80374396:
+    requestgraph:
+      entry: 
+      edges:
